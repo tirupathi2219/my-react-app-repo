@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "name": "employee1",
+            "expericence": 2
+        },
+        {
+            "name": "employee2",
+            "expericence": 1
+        },
+        {
+            "name": "employee3",
+            "expericence": 0
+        },
+        {
+            "name": "employee4",
+            "expericence": 3
+        },
+        {
+            "name": "employee5",
+            "expericence": 0.6
+        },
+        {
+            "name": "employee6",
+            "expericence": 2
+        },
+        {
+            "name": "employee7",
+            "expericence": 2.5
+        },
+        {
+            "name": "employee8",
+            "expericence": 5
+        }
+    ]
+}
