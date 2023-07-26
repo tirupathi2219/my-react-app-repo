@@ -25,10 +25,6 @@ export default function Home() {
     }
     return (
         <div>
-            <div>
-                <h1>Travelasyoulike</h1>
-                <div><div><Link>Add A New Vehicle</Link></div> <div><Link>Take A Ride</Link></div></div>
-            </div>
             <form action="#">
             <div><label>Name</label> <input type='text' required placeholder='Enter your Name '/> </div>
             <div><label>Email</label> <input type='email' placeholder='email' /> </div>
