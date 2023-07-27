@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import p1 from './assets/flower.jpg'
@@ -22,11 +21,11 @@ export default function Contact() {
         {
             arrowicons.forEach((icon) => {
                 icon.addEventListener("click", () => {
-                    carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+                    carousel.scrollLeft += icon.id === "left" ? -firstImgWidth : firstImgWidth;
                 })
             })
         }
-    },[arrowicons])
+    },[])
     console.log('13==',firstImg,document.querySelector(`.${styles.carousel}`));
     let isDragStart = false, prevPageX, prevScrollLeft;
     let firstImgWidth = firstImg?.clientWidth +14; // getting first img width & adding 14 margin value
@@ -58,7 +57,7 @@ export default function Contact() {
                 <i id='left' className="bi bi-chevron-left"></i>
                 <div className={styles.carousel}>
                     {
-                        arr.map((item,index) => <img key={index} src={item} />)
+                        arr.map((item,index) => <img key={index} src={item} alt=''/>)
                     }
                 </div>
                 <i id='right' className="bi bi-chevron-right"></i>
