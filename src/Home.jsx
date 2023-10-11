@@ -8,7 +8,6 @@ export default function Home() {
     }
     const regxnum=/[0-9]/
     const handleMobile=(e) =>{
-        console.log("6==", regxnum.test(e.key));
         if(regxnum.test(e.key))
         {
            console.log("10=="); 
@@ -18,8 +17,6 @@ export default function Home() {
         }
     }
     const handleGender =(e) => {
-
-        console.log('19==',e.target.checked);
         if(e.target.checked)
         {
 
@@ -28,8 +25,8 @@ export default function Home() {
     return (
         <div className='container'>
             <form action="#">
-            <div><label>Name</label> <input type='text' required placeholder='Enter your Name '/> </div>
-            <div><label>Email</label> <input type='email' placeholder='email' /> </div>
+            <div className='name'><label>Name</label> <input type='text' required placeholder='Enter your Name '/> </div>
+            <div><label className='email'>Email</label> <input type='email' placeholder='email' /> </div>
             <div><label>Number</label> <input type='text' onKeyDown={(e)=>{handleMobile(e)}} /> </div>
             <div><label>Gender</label> <input type='radio' name='gender' onChange={(e)=>{handleGender(e)}} /> <label>Male</label> <input type='radio' name='gender' onChange={(e)=>{handleGender(e)}}/> <label>Female</label> <input type='radio' name='gender' onChange={(e)=>{handleGender(e)}}/> <label>Not to Specify</label> </div>
             <div><button className='submit-button' type='submit' onClick={(e)=> handleSubmit(e)}>Submit</button></div>

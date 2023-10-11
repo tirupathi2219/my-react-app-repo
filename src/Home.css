@@ -1,3 +1,13 @@
     .submit-button {
         background-color: aquamarine;
     }
+.email {
+    color: chartreuse;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+    .name {
+        color: blueviolet;
+        text-transform: uppercase;
+    }
