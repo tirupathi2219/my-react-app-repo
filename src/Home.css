@@ -1,3 +1,8 @@
     .submit-button {
         background-color: aquamarine;
     }
+
+    .name {
+        color: blueviolet;
+        text-transform: uppercase;
+    }
