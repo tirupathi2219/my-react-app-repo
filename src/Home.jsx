@@ -8,7 +8,6 @@ export default function Home() {
     }
     const regxnum=/[0-9]/
     const handleMobile=(e) =>{
-        console.log("6==", regxnum.test(e.key));
         if(regxnum.test(e.key))
         {
            console.log("10=="); 
@@ -18,8 +17,6 @@ export default function Home() {
         }
     }
     const handleGender =(e) => {
-
-        console.log('19==',e.target.checked);
         if(e.target.checked)
         {
 
